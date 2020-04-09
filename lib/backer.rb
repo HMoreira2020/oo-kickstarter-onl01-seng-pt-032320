@@ -1,5 +1,5 @@
 class Backer 
-  attr_accessor :name 
+  attr_accessor :backer 
   attr_reader :backed_projects 
   
   
@@ -10,7 +10,7 @@ class Backer
   
   def back_project(project)   #arg is a Project instance
     @backed_projects << project 
-    project. = self 
+    project.backer = self 
   end 
   
   
