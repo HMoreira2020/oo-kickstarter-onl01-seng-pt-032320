@@ -10,7 +10,7 @@ class Backer
   
   def back_project(project)   #arg is a Project instance
     @backed_projects << project 
-    project.backers = self 
+    project.backers << self 
   end 
   
   
